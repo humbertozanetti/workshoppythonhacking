@@ -47,11 +47,35 @@ else:
 ### O módulo socket
 
 Antes de ver o módulo, é interessante saber um pouco mais sobre sockets. Sockets são abstrações de conexão (via TCP/IP), que permitem que a comunicação entre duas máquinas distintas.
-
 ![](https://miro.medium.com/max/567/1*dTcOPDdDQyQExxPo1akCrA.png)
 
 Quando utilizamos sockets, estamos trabalhando com as 2 primeiras camadas do modelo TCP/IP, fazendo acesso à protocolos e portas de serviços.
-
 ![](https://miro.medium.com/max/538/1*tCd-YCnFRUTX5H7n8I-6yA.png)
 
 Nesse exemplo, vamos criar um socket simples, para tentar acessar o servidor do Google, através de duas portas de serviços: a 80, comum para acesso à servidor Web (por exemplo, páginas em site) e a 21 (para servidor FTP, para troca de arquivos e muitas com a necessidade de autenticação).
+```{r}
+import socket
+import sys
+
+try:
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # AF_INET -> família de endereços o tipo de endereço (IPv4 ou IPv6)
+    # SOCK_STREAM -> siginifica socket do tipo TCP (SOCK_DGRAM seria p/ UDP)
+    print('Socket criado com sucesso.\n')
+except socket.error as e:
+    print('Conexão falhou!')
+    print('Erro: {}'.format(e))
+    sys.exit()
+
+host_alvo=input('Digite o host ou IP a ser conectado: ')
+port_alvo=input('Digite a porta a ser conectada: ')
+
+try:
+    s.connect( (host_alvo,int(port_alvo)) )
+    print('Client TCP conectado com sucesso no host '+host_alvo+' e na porta '+port_alvo)
+    s.shutdown(2)
+except socket.error as e:
+    print('Conexão falhou: '+host_alvo+', '+port_alvo)
+    print('Erro: {}'.format(e))
+    sys.exit()
+```
