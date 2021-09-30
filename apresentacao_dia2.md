@@ -47,9 +47,11 @@ else:
 ### O módulo socket
 
 Antes de ver o módulo, é interessante saber um pouco mais sobre sockets. Sockets são abstrações de conexão (via TCP/IP), que permitem que a comunicação entre duas máquinas distintas.
+
 ![](https://miro.medium.com/max/567/1*dTcOPDdDQyQExxPo1akCrA.png)
 
 Quando utilizamos sockets, estamos trabalhando com as 2 primeiras camadas do modelo TCP/IP, fazendo acesso à protocolos e portas de serviços.
+
 ![](https://miro.medium.com/max/538/1*tCd-YCnFRUTX5H7n8I-6yA.png)
 
 Nesse exemplo, vamos criar um socket simples, para tentar acessar o servidor do Google, através de duas portas de serviços: a 80, comum para acesso à servidor Web (por exemplo, páginas em site) e a 21 (para servidor FTP, para troca de arquivos e muitas com a necessidade de autenticação).
