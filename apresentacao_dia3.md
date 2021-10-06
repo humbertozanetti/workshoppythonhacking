@@ -8,7 +8,7 @@
 Uma das maiores vantagens do Python é a quantidade de módulos e facilidade na manipulação de dados, de diferentes formas. **Web Scraper** é a denominação de uma sistema que tem como responsabilidade coletar dados em ambientes web, principlamente em websites, em uma processo automatizado. Atualmente, há várias técnicas que se preocupam e impedem que acessem os dados através de sistemas automatizados.
 No exemplo desse dia, vamos usar o módulo [request](https://docs.python-requests.org/en/latest/), um dos módulos mais famosos e utilizados para trabalhar com requisições HTTP atualmente.
 
-![](https://docs.python-requests.org/en/latest/_static/requests-sidebar.png)
+<img src="https://docs.python-requests.org/en/latest/_static/requests-sidebar.png" width="240" height="315" />
 
 Esse pequeno programa em Python busca por emails dentro de uma página e gera um arquivo de texto com todos os emails, sendo um princípio básico de criação de um sistema de [**Spammer**](https://pt.wikipedia.org/wiki/Spam). Usaremos também um módulo de [Regex](https://medium.com/pyladiesbh/regex-b%C3%A1sico-em-python-31dcb7fac046) (Expressões Regulares), o módulo [re](https://docs.python.org/3/library/re.html), para ajudar a identificar endereços de emails válidos.
 
