@@ -12,6 +12,8 @@ Grandes centros de formação, como o [MIT](https://www.mit.edu/), adotaram como
 
 ### Python no Hacking Ético
 
+Para dar uma **ótima** introdução sobre Python na área de Segurança, vamos ver o [vídeo](https://youtu.be/VdjrmZTRhx4) "Python para Pentest" da analista de segurança Michelle Mesquita.
+
 [Grant Collins](https://twitter.com/collinsinfosec), estudante em Cibersegurança e dono da [Cybercademy](https://cybercademy.org/), explica em um [vídeo](https://youtu.be/u3O6TrLjTnY) em seu canal do YouTube, algum dos principais motivos da forte adoção na área:
 1. **É fácil de usar** (*"It's easy to learn"*)
    + Sua sintaxe objetiva chega a ser motivador para o iniciante ou para aqueles que já conhecem uma linguagem
